@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Droppable——放置</title>
+	<link rel="stylesheet" href="jquery-ui.min.css" />
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	  $(function(){
+	    $("#Rect1").draggable();//允许进行拖动
+		$("#Rect2").droppable();//允许进行放置
+		
+		$("#Rect2").on("drop",function(event,ui){
+		   //alert(event);
+		   $(this).text('drop事件');
+		});
+	  });
+	</script>
+</head>
+<body>
+	<div style="width:100px;height:100px;border:2px solid #f0f;" id="Rect1"></div>
+	<div style="width:200px;height:200px;border:2px solid #f00;" id="Rect2"></div>
+</body>
+</html>

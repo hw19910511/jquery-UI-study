@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Autocomplete——自动完成</title>
+	<link rel="stylesheet" href="../jquery-ui.min.css" />
+	<script type="text/javascript" src="../jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	  $(function(){
+	    var autotags=["huangwei","html","css","javascript","java","ios","svg"];
+		$("#tags").autocomplete({
+		  source:autotags
+		});
+	  });
+	</script>
+</head>
+<body>
+	<label for="tags">Tags:</label>
+	<input type="text" id="tags" />
+</body>
+</html>

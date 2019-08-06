@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Menu——菜单</title>
+	<link rel="stylesheet" href="../jquery-ui.min.css" />
+	<script type="text/javascript" src="../jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	  $("#menu").menu();
+	});
+	</script>
+	<style type="text/css"> 
+	#menu{
+	width:250px;
+	}
+	#menu ul{
+	width:200px;
+	}
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li>
+		<a href="#">java</a>
+		  <ul>
+		  	<li><a href="#">Java EE</a></li>
+		  	<li><a href="#">Java SE</a></li>
+		  	<li><a href="#">Java ME</a></li>
+		  </ul>
+		</li>
+		<li>c</li>
+		<li>c++</li>
+		<li>PHP</li>
+	</ul>
+</body>
+</html>

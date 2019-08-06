@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+	
+</head>
+<body>
+     <!-- <select name="sex" id="sex"></select>
+     <select name="sex1" id="sex1">   
+	 </select>-->
+	 <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<!--<script type="text/javascript"> 
+	 var sex_value=["男","女"]
+	 var sexs="";
+	 for(var i=0;i<sex_value.length;i++){
+       sexs+='<option'+' value="'+i+'">'+sex_value[i]+'</option><br/>';
+    }
+	
+	$("#sex,#sex1").html(sexs);
+	
+	</script>-->
+	
+	<select name="sex0" id="sex0"> 
+	 <option>男</option>
+	 <option>女</option>
+	  
+	</select>
+	<button onclick="sss()">提交</button>
+	<script type="text/javascript"> 
+	//$("#sex0 option[text='女']").attr('selected',true);
+	$("#sex0 option[text='女']").attr('selected',true);
+	$("#sex0").find("option[text='女']").attr('selected',true);
+	/*function sss(){
+	  alert($("#sex0").find("option:selected").text())
+	  
+	  }
+	  alert($("#sex0").find("option:selected").text());*/
+	</script>
+</body>
+</html>

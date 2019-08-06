@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+    <script type="text/javascript"> 
+	 function  subCheck()
+    {
+    if(event.keyCode==13)
+    {
+    aa();
+    //document.form1.submit();
+    }
+    }
+	function aa(){
+	  alert("我要被提交了，再见……");
+	}
+	function bb(){
+	  if($("#loginName").val()==''){
+	    $("#ff").html('不能为空！');
+	  }
+	}
+	</script>
+</head>
+<body>
+	<form name="form1">
+	<input type="text" name="" id="loginName" /><span id="ff"></span>
+	<input type="password" name="" id="loginPassword" onkeydown="subCheck();"/>
+	<input type="button" value="登录" onclick="aa()"/>
+	 </form><br />
+	 
+	 
+	 
+	 <input type="password" name="userpwd" id="userpwd" onkeydown="subCheck();"/>
+	 <input type="button" value="提交" onclick="aa()"/>
+</body>
+</html>
